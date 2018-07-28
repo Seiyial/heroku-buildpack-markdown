@@ -12,7 +12,7 @@ echo "-----> Markdown to HTML"
 MARKDOWN_FILES=`find $1 -name "*.md"`
 
 for f in $MARKDOWN_FILES; do
-  ./summarizeMD $f
+  $ROOT_DIR/opt/summarizeMD $f
   wait
 
   NEWFILE=${f%.*}.html
