@@ -6,6 +6,7 @@ Run a static web site from Markdown files.
 1. Create an `index.md` file:
 
         echo "# hello, world" > index.md
+        # more files are fine, just link them from index.md
 
 2. Create a git repo containing the file:
 
@@ -15,7 +16,7 @@ Run a static web site from Markdown files.
 
 3. Create an app on Heroku:
 
-        heroku create -s cedar --buildpack https://github.com/jamesward/heroku-buildpack-markdown.git
+        heroku create --buildpack https://github.com/jamesward/heroku-buildpack-markdown.git
 
 4. Push the repo to Heroku:
 
